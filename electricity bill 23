@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int u;
+    scanf("%d",&u);
+    int r1=(u*0.5);
+    int r2=((u*0.65)+100);
+    int r3=((u*0.80)+200);
+    int r4=((u*1.25)+425);
+    
+    if(u<=200)
+    {
+        printf("Rs.%d",r1);
+    }
+    if(u>200&&u<=400)
+    {
+        printf("Rs.%d",r2);
+    }
+    if(u>400&&u<=600)
+    {
+        printf("Rs.%d",r3);
+    }
+    if(u>600)
+    {
+        printf("Rs.%d",r4);
+    }
+    return 0;
+}
+    
