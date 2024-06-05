@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int d=3;
+    int m=3;
+    int y=1914;
+    int hostel=76;
+    int sum=d+m+y;
+    if(sum%(3*4)==0)
+    {
+        if(hostel>50 && hostel<100)
+        {
+            printf("Cinema Day");
+        }else
+        {
+            printf("not a cinema day");
+        }
+        }
+    else
+    {
+        printf("it's not a cinema day");
+    }
+    return 0;
+    }
