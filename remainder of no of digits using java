@@ -1,0 +1,17 @@
+import java.util.Scanner;
+
+public class CountDigitsRemainder {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        int r = countDigitsRemainder(n);
+        System.out.println(r);
+    }
+    
+    public static int countDigitsRemainder(int n) {
+        String numStr = Integer.toString(n);
+        int numberOfDigits = numStr.length();
+                int r = n % numberOfDigits;
+        return r;
+    }
+}
