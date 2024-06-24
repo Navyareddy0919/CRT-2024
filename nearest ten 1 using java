@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int a=s.nextInt();
+        int rem=a%10;
+        if(rem>=5)
+        {
+            a=a+10-rem;
+            System.out.println(a);
+        }
+        else
+        {
+            a=a-rem;
+           System.out.println(a); 
+        }
+    }
+}
