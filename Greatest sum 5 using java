@@ -1,0 +1,55 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        
+        int rows = scanner.nextInt();
+        int columns = scanner.nextInt();
+
+        
+        int[][] matrix = new int[rows][columns];
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                matrix[i][j] = scanner.nextInt();
+            }
+        }
+
+        
+        int maxRowSum = Integer.MIN_VALUE;
+        int maxRowNo = -1;
+        for (int i = 0; i < rows; i++) {
+            int rowSum = 0;
+            for (int j = 0; j < columns; j++) {
+                rowSum += matrix[i][j];
+            }
+            if (rowSum > maxRowSum) {
+                maxRowSum = rowSum;
+                maxRowNo = i + 1;
+            }
+            System.out.print(rowSum + " ");
+        }
+        System.out.println();
+        System.out.println("Row " + maxRowNo);
+
+        
+        int maxColumnSum = Integer.MIN_VALUE;
+        int maxColumnNo = -1;
+        for (int j = 0; j < columns; j++) {
+            int columnSum = 0;
+            for (int i = 0; i < rows; i++) {
+                columnSum += matrix[i][j];
+            }
+            if (columnSum > maxColumnSum) {
+                maxColumnSum = columnSum;
+                maxColumnNo = j + 1;
+            }
+            System.out.print(columnSum + " ");
+        }
+        System.out.println();
+        System.out.println("Column " + maxColumnNo);
+    }
+}
