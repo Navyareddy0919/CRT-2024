@@ -1,0 +1,37 @@
+import java.util.*;
+class SortFirstHalf
+{
+static void Sort(int a[],int n)
+{
+for(int i=n-1;i>=1;i--)
+{
+for(int j=0;j<=i-1;j++)
+{
+if(a[j]>a[j+1])
+{
+int t=a[j];
+a[j]=a[j+1];
+a[j+1]=t;
+}
+}
+}
+}
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+int n=s.nextInt();
+int a[]=new int[n];
+for(int i=0;i<n;i++)
+{
+a[i]=s.nextInt();
+}
+if(n%2==0)
+Sort(a,n/2);
+else
+Sort(a,(n/2)+1);
+for(int i=0;i<n;i++)
+{
+System.out.println(a[i]+" ");
+}
+}
+}
