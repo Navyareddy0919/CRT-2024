@@ -1,0 +1,11 @@
+import java.util.*;
+import java.io.*;
+import java.util.Scanner;
+class Ex9 {
+    public static void main(String[] args) {
+        String str1="ammu";
+String str2="reddy";
+System.out.println(str1);
+System.out.println(str2);
+}
+}
