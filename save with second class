@@ -1,0 +1,26 @@
+import java.util.*;
+class Student3 {
+    int admno;
+    String name;
+    void get(int x,String y)
+    {
+       
+        admno=x;
+        name=y;;
+    }
+    void show()
+    {
+        System.out.println(admno+" "+name);
+    }
+}
+class Test
+{
+    public static void main(String[] args) {
+        Student2 s1=new Student2();
+        s1.get(101,"ddd");
+        s1.show();
+        Student2 s2=new Student2();
+        s2.get(104,"vvv");
+        s2.show();
+    }
+}
