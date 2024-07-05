@@ -1,0 +1,26 @@
+import java.io.*;
+class Studenttt1
+{
+int admno;
+String name;
+Studenttt1(int x,String y)
+{
+admno=x;
+name=y;
+}
+void show()
+{
+System.out.println(admno+" "+name);
+}
+}
+class Testtt01
+{
+public static void main(String[] args)
+{
+Studenttt1 t1=new Studenttt1(111,"aaa");
+t1.show();
+Studenttt1 t2=new Studenttt1(222,"kkk");
+t2.show();
+}
+
+}
