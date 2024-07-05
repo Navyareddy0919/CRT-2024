@@ -1,0 +1,13 @@
+import java.io.*;
+class Testtt
+{
+void show()
+{
+System.out.println("INDHUMATHI I LOVE YOU");
+}
+public static void main(String[] args)
+{
+Testtt t1=new Testtt();
+t1.show();
+}
+}
